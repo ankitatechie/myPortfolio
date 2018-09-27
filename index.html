@@ -1,30 +1,52 @@
 <!DOCTYPE html>
 <html>
 <head>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-126231498-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-126231498-1');
+  </script>
+
   <title>Ankita Agarwal</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, user-scalable=no">
+  <link rel="shortcut icon" type="image/x-icon" href="./favicon.ico">
 
   <!-- HOSTED -->
-  <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Raleway:400,600,700" rel="stylesheet">
+
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:site" content="@11_anki">
+  <meta name="twitter:domain" content="http://ankitatechie.github.io">
+  <meta name="twitter:creator" content="@11_anki">
+  <meta name="twitter:title" content="Ankita Agarwal">
+  <meta name="twitter:image" content="https://instagram.fdel1-4.fna.fbcdn.net/vp/cea612a6ed60e1c80f9674fad3a08a19/5C3E96FF/t51.2885-15/sh0.08/e35/s640x640/41518313_1943146512645312_101359394510484402_n.jpg">
+
+  <meta property="og:url" content="http://ankitatechie.github.io" />
+  <meta property="og:type" content="Portfolio" />
+  <meta property="og:title" content="Ankita Agarwal" />
+  <meta property="og:description" content="Frontend developer, web developer, designer, developer from India." />
+  <meta property="og:image" content="https://instagram.fdel1-4.fna.fbcdn.net/vp/cea612a6ed60e1c80f9674fad3a08a19/5C3E96FF/t51.2885-15/sh0.08/e35/s640x640/41518313_1943146512645312_101359394510484402_n.jpg" />
+
 
   <!-- HOSTED -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/mixitup/2.1.11/jquery.mixitup.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.0/jquery.waypoints.min.js"></script>
 
   <!-- LOCAL -->
-  <link rel="stylesheet" href="./css/materialdesignicons.min.css">
+  <link rel="stylesheet" href="./fonts/mdi/css/materialdesignicons.min.css">
   <link rel="stylesheet" href="./css/animate.min.css">
   <link rel="stylesheet" href="./css/styles.css">
 
   <!-- LOCAL -->
   <script src="./js/pt.min.js"></script>
-  <!-- <script src="scripts/index.js"></script> -->
+  <script src="./js/index.js"></script>
 
 </head>
 <body>
-  <section class="hero">
+  <section id="home" class="hero height-fix">
     <div id="pt" class="canvas"></div>
     <div class="hero-outer">
       <div class="hero-inner">
@@ -33,7 +55,7 @@
           <br/>
           I'm a front-end developer.
         </div>
-        <div class="button">View my work</div>
+        <div class="button page-link" dest="about">View my work <i class="mdi mdi-arrow-right"></i></div>
       </div>
     </div>
 
@@ -41,145 +63,283 @@
     <nav class="navbar">
       <div class="container">
         <ul class="link-wrap">
-          <li class="page-link page-link--active">home</li>
-          <li class="page-link">about</li>
-          <li class="page-link">projects</li>
-          <li class="page-link">contact</li>
+          <li class="page-link active" dest="home">home</li>
+          <li class="page-link" dest="about">about</li>
+          <li class="page-link" dest="projects">projects</li>
+          <li class="page-link" dest="contact">contact</li>
         </ul>
       </div>
     </nav>
   </section>
 
-  <section class="about">
+  <section id="about" class="about">
     <div class="container">
       <h1 class="heading wow fadeInLeft">About</h1>
       <div class="heading--decorate wow fadeInLeft" data-wow-delay="1s"></div>
-      <div class="flex-container">
-        <div class="flex-item">
-          <div class="hex-wrap wow flipInY">
-            <div class="hexagon wow pulse">
-              <i class="mdi mdi-speedometer"></i>
+      <div class="flex-container about-0">
+        <div class="flex-row">
+          <div class="flex-item">
+            <div class="hex-wrap wow flipInY">
+              <div class="hexagon wow pulse">
+                <i class="mdi mdi-speedometer"></i>
+              </div>
+            </div>
+            <div class="info-text">
+              <h1 class="info-text--bold">Fast</h1>
+              <p>Fast load times and lag free interaction, my highest priority.</p>
             </div>
           </div>
-          <div class="about-text">
-            <h1 class="about-text--bold">Fast</h1>
-            <p>Fast load times and lag free interaction, my highest priority.</p>
+          <div class="flex-item">
+            <div class="hex-wrap wow flipInY">
+              <div class="hexagon">
+                <i class="mdi mdi-cellphone-link"></i>
+              </div>
+            </div>
+            <div class="info-text">
+              <h1 class="info-text--bold">Responsive</h1>
+              <p>My layouts will work on any device, big or small.</p>
+            </div>
           </div>
         </div>
-        <div class="flex-item">
-          <div class="hex-wrap wow flipInY">
-            <div class="hexagon">
-              <i class="mdi mdi-speedometer"></i>
+        <div class="flex-row">
+          <div class="flex-item">
+            <div class="hex-wrap wow flipInY">
+              <div class="hexagon">
+                <i class="mdi mdi-lightbulb-outline"></i>
+              </div>
+            </div>
+            <div class="info-text">
+              <h1 class="info-text--bold">Intuitive</h1>
+              <p>Strong preference for easy to use, intuitive UX/UI.</p>
             </div>
           </div>
-          <div class="about-text">
-            <h1 class="about-text--bold">Responsive</h1>
-            <p>My layouts will work on any device, big or small.</p>
-          </div>
-        </div>
-        <div class="flex-item">
-          <div class="hex-wrap wow flipInY">
-            <div class="hexagon">
-              <i class="mdi mdi-speedometer"></i>
+          <div class="flex-item">
+            <div class="hex-wrap wow flipInY">
+              <div class="hexagon">
+                <i class="mdi mdi-rocket"></i>
+              </div>
             </div>
-          </div>
-          <div class="about-text">
-            <h1 class="about-text--bold">Intuitive</h1>
-            <p>Strong preference for easy to use, intuitive UX/UI.</p>
-          </div>
-        </div>
-        <div class="flex-item">
-          <div class="hex-wrap wow flipInY">
-            <div class="hexagon">
-              <i class="mdi mdi-speedometer"></i>
+            <div class="info-text">
+              <h1 class="info-text--bold">Dynamic</h1>
+              <p>Websites don't have to be static, I love making pages come to life.</p>
             </div>
-          </div>
-          <div class="about-text">
-            <h1 class="about-text--bold">Dynamic</h1>
-            <p>Websites don't have to be static, I love making pages come to life.</p>
           </div>
         </div>
       </div>
       <div class="flex-container">
-        <div class="flex-item portfolio-wrapper wow fadeInLeft">
-          <div class="hexa">
-            <div class="hex1">
-              <div class="hex2">
-                <div class="portfolio-img"></div>
+        <div class="flex-row">
+          <div class="flex-item portfolio-wrapper wow fadeInLeft">
+            <div class="hexa">
+              <div class="hex1">
+                <div class="hex2">
+                  <div class="portfolio-img"></div>
+                </div>
+              </div>
+            </div>
+            <div class="info-text">
+              <h1 class="info-text--bold">Who's this girl?</h1>
+              <p>
+                I'm a front-end developer with professional experience in building efficient and scalable web applications. I have serious passion for UI effects, animations and creating intuitive, dynamic user experiences.
+                <a href="mailto: ankita.tech011@gmail.com">Let's make something special.</a>
+              </p>
+            </div>
+          </div>
+          <div class="flex-item wow fadeInRight">
+            <div class="progress-wrapper">
+              <div class="bar">
+                <div class="bar fill" style="width: 80%">
+                  <div class="bar__tag">CSS3/Sass</div>
+                </div>
+                <span>80%</span>
+              </div>
+              <div class="bar">
+                <div class="bar fill" style="width: 90%">
+                  <div class="bar__tag">HTML5</div>
+                </div>
+                <span>90%</span>
+              </div>
+              <div class="bar">
+                <div class="bar fill" style="width: 70%">
+                  <div class="bar__tag">React</div>
+                </div>
+                <span>70%</span>
+              </div>
+              <div class="bar">
+                <div class="bar fill" style="width: 70%">
+                  <div class="bar__tag">Redux</div>
+                </div>
+                <span>70%</span>
+              </div>
+              <div class="bar">
+                <div class="bar fill" style="width: 80%">
+                  <div class="bar__tag">Javascript/Jquery</div>
+                </div>
+                <span>80%</span>
+              </div>
+              <div class="bar">
+                <div class="bar fill" style="width: 70%">
+                  <div class="bar__tag">Angular</div>
+                </div>
+                <span>70%</span>
+              </div>
+              <div class="bar">
+                <div class="bar fill" style="width: 60%">
+                  <div class="bar__tag">Webpack</div>
+                </div>
+                <span>60%</span>
+              </div>
+              <div class="bar">
+                <div class="bar fill" style="width: 50%">
+                  <div class="bar__tag">Wordpress</div>
+                </div>
+                <span>50%</span>
+              </div>
+              <div class="bar">
+                <div class="bar fill" style="width: 90%">
+                  <div class="bar__tag">Responsive Design</div>
+                </div>
+                <span>90%</span>
+              </div>
+              <div class="bar">
+                <div class="bar fill" style="width: 70%">
+                  <div class="bar__tag">Browser Dev Tools</div>
+                </div>
+                <span>70%</span>
+              </div>
+              <div class="bar">
+                <div class="bar fill" style="width: 80%">
+                  <div class="bar__tag">Version control/GIT</div>
+                </div>
+                <span>80%</span>
               </div>
             </div>
           </div>
-          <div class="about-text">
-            <h1 class="about-text--bold">Who's this girl?</h1>
-            <p>I'm a front-end developer with professional experience building efficient and scalable web applications. I have serious passion for UI effects, animations and creating intuitive, dynamic user experiences.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <section class="personal">
+    <div class="container">
+      <h1 class="heading wow fadeInLeft">Random Facts</h1>
+      <div class="heading--decorate wow fadeInLeft" data-wow-delay="1s"></div>
+      <div class="flex-container">
+        <div class="flex-item text-center">
+          <img src="./images/dance.gif" loop=infinite alt="random image">
+        </div>
+        <div class="flex-item">
+          <p class="wow fadeInDown" data-wow-delay="0.1s"><span class="emoji">☕</span> I drink a lot of <span class="highlight">coffee</span></p>
+          <p class="wow fadeInDown" data-wow-delay="0.2s"><span class="emoji">⛰</span> I love <span class="highlight">hiking</span> mountains</p>
+          <p class="wow fadeInDown" data-wow-delay="0.3s"><span class="emoji">🍳</span> I love to <span class="highlight">cook</span>(but not foody)</p>
+          <p class="wow fadeInDown" data-wow-delay="0.4s"><span class="emoji">🌸</span> I'm bit of a <span class="highlight">clean freak</span></p>
+          <p class="wow fadeInDown" data-wow-delay="0.5s"><span class="emoji">🧘‍♀️</span> I practice <span class="highlight">yoga</span></p>
+          <p class="wow fadeInDown" data-wow-delay="0.6s"><span class="emoji">🤟</span> I'm a <span class="highlight">partyholic</span></p>
+          <p class="wow fadeInDown" data-wow-delay="0.7s"><span class="emoji">🎨</span> <span class="highlight">Painting</span> is meditation</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="projects" class="projects">
+    <div class="container">
+      <h1 class="heading wow fadeInLeft">Projects</h1>
+      <div class="heading--decorate wow fadeInLeft" data-wow-delay="1s"></div>
+      <div class="flex-container">
+        <div class="flex-row">
+          <div class="flex-item wow fadeIn" data-wow-delay="0.1s">
+            <div class="img-wrapper" style="background: url('./images/grofers.jpg') center/cover"></div>
+            <div class="info-text">
+              <h1 class="info-text--bold">Grofers Consumer Web</h1>
+              <p>Developement of consumers web platform for Grofers using React and Redux with a team of 4 members.</p>
+              <a href="http://grofers.com" class="view-btn" target="_blank">View Project <i class="mdi mdi-arrow-right"></i></a>
+            </div>
+          </div>
+          <div class="flex-item wow fadeIn" data-wow-delay="0.2s">
+            <div class="img-wrapper" style="background: url('./images/grofers_blog.png') center/cover"></div>
+            <div class="info-text">
+              <h1 class="info-text--bold">Grofers Blog</h1>
+              <p>End to end design and developement of blog for Grofers using Wordpress and bootstrap.</p>
+              <a href="http://grofers.com/blog/" class="view-btn" target="_blank">View Project <i class="mdi mdi-arrow-right"></i></a>
+            </div>
           </div>
         </div>
-        <div class="flex-item progress-wrapper wow fadeInRight">
-          <div class="bar">
-            <div class="bar--fill" style="width: 80%" data-wow-duration="2s">
-              <div class="bar__tag">CSS3/Sass</div>
+        <div class="flex-row">
+          <div class="flex-item wow fadeIn" data-wow-delay="0.3s">
+            <div class="img-wrapper" style="background: url('./images/typeset1.png') center/cover"></div>
+            <div class="info-text">
+              <h1 class="info-text--bold">Typeset Web</h1>
+              <p>Design and developement of all web pages and features for Typeset, a platform for writing research papers.</p>
+              <a href="http://typeset.io" class="view-btn" target="_blank">View Project <i class="mdi mdi-arrow-right"></i></a>
             </div>
-            <span>80%</span>
           </div>
-          <div class="bar">
-            <div class="bar--fill" style="width: 90%">
-              <div class="bar__tag">HTML5</div>
+          <div class="flex-item wow fadeIn" data-wow-delay="0.4s">
+            <div class="img-wrapper" style="background: url('./images/typeset_editor4.png'); background-size: cover"></div>
+            <div class="info-text">
+              <h1 class="info-text--bold">Typeset Editor</h1>
+              <p>Developement of an editor built for writing, collaborating and formatting only research papers.</p>
+              <a href="https://typeset.io/accounts/login/" class="view-btn" target="_blank">View Project <i class="mdi mdi-arrow-right"></i></a>
             </div>
-            <span>90%</span>
           </div>
-          <div class="bar">
-            <div class="bar--fill" style="width: 70%">
-              <div class="bar__tag">React</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="footer" id="contact">
+    <div class="container">
+      <h1 class="heading wow fadeInLeft">Contact</h1>
+      <div class="heading--decorate wow fadeInLeft" data-wow-delay="1s"></div>
+      <div class="flex-container">
+        <div class="flex-item">
+          <div class="footer-wrapper-left">
+            <div class="hex-wrap wow flipInY">
+              <div class="hexagon"></div>
+              <span class="hexa-icon">A</span>
             </div>
-            <span>70%</span>
+            <p>Reach me for an enquiry or hiring or just to say Hi</p>
+            <a class="wow fadeInDown" href="mailto:ankita.tech011@gmail.com"><i class="mdi mdi-email"></i> ankita.tech011@gmail.com</a>
+            <div class="phone wow fadeInDown"><i class="mdi mdi-phone"></i> +91-9971890081</div>
           </div>
-          <div class="bar">
-            <div class="bar--fill" style="width: 70%">
-              <div class="bar__tag">Redux</div>
-            </div>
-            <span>70%</span>
-          </div>
-          <div class="bar">
-            <div class="bar--fill" style="width: 80%">
-              <div class="bar__tag">Javascript/Jquery</div>
-            </div>
-            <span>80%</span>
-          </div>
-          <div class="bar">
-            <div class="bar--fill" style="width: 70%">
-              <div class="bar__tag">Angular</div>
-            </div>
-            <span>70%</span>
-          </div>
-          <div class="bar">
-            <div class="bar--fill" style="width: 60%">
-              <div class="bar__tag">Webpack</div>
-            </div>
-            <span>60%</span>
-          </div>
-          <div class="bar">
-            <div class="bar--fill" style="width: 50%">
-              <div class="bar__tag">Wordpress</div>
-            </div>
-            <span>50%</span>
-          </div>
-          <div class="bar">
-            <div class="bar--fill" style="width: 90%">
-              <div class="bar__tag">Responsive Design</div>
-            </div>
-            <span>90%</span>
-          </div>
-          <div class="bar">
-            <div class="bar--fill" style="width: 70%">
-              <div class="bar__tag">Browser Dev Tools</div>
-            </div>
-            <span>70%</span>
-          </div>
-          <div class="bar">
-            <div class="bar--fill" style="width: 80%">
-              <div class="bar__tag">Version control/GIT</div>
-            </div>
-            <span>80%</span>
+        </div>
+        <div class="flex-item">
+          <div class="footer-wrapper-right">
+            <a href="https://github.com/ankitatechie" target="_blank" class="inline-icon">
+              <div class="hex-wrap wow flipInY" data-wow-delay="0.1s">
+                <div class="hexagon">
+                  <i class="mdi mdi-git"></i>
+                </div>
+              </div>
+            </a>
+            <a href="https://www.linkedin.com/in/ankita-agarwal-713a6a5a/" target="_blank" class="inline-icon">
+              <div class="hex-wrap wow flipInY" data-wow-delay="0.2s">
+                <div class="hexagon">
+                  <i class="mdi mdi-linkedin"></i>
+                </div>
+              </div>
+            </a>
+            <a href="https://www.instagram.com/ankita.agarwal011/" target="_blank" class="inline-icon">
+              <div class="hex-wrap wow flipInY" data-wow-delay=0.3s">
+                <div class="hexagon">
+                  <i class="mdi mdi-instagram"></i>
+                </div>
+              </div>
+            </a>
+            <a href="https://twitter.com/11_anki" target="_blank" class="inline-icon">
+              <div class="hex-wrap wow flipInY" data-wow-delay="0.4s">
+                <div class="hexagon">
+                  <i class="mdi mdi-twitter"></i>
+                </div>
+              </div>
+            </a>
+            <a href="https://www.facebook.com/ankita.agarwal.3572846" target="_blank" class="inline-icon">
+              <div class="hex-wrap wow flipInY" data-wow-delay="0.5s">
+                <div class="hexagon">
+                  <i class="mdi mdi-facebook"></i>
+                </div>
+              </div>
+            </a>
+            <p class="wow fadeInDown">Let's stay connected!</p>
+            <h4>Ankita Agarwal <span class="highlight">©2018</span></h4>
           </div>
         </div>
       </div>
